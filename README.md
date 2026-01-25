@@ -68,5 +68,5 @@ Spark-based ML pipeline for detecting anomalous banking transactions.
 
 ## 📫 Contact Me
 - 📧 Email: mg7357432@gmail.com
-- 💼 LinkedIn: *(add when ready)*
+- 💼 LinkedIn: https://www.linkedin.com/in/mogaber2004
 - 🧠 Open to internships & junior AI roles
