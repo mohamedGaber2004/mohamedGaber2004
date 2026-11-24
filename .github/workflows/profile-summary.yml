@@ -18,7 +18,7 @@ jobs:
           # Personal Access Token (classic) with `repo` and `user` scopes,
           # saved as a repo secret named PROFILE_TOKEN.
           # This lets the cards see your private repos and contributions.
-          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
           BRANCH_NAME: "main"
