@@ -1,22 +1,26 @@
 name: GitHub-Profile-Summary-Cards
-
+ 
 on:
   schedule:
     - cron: "0 0 * * *" # refresh daily at 00:00 UTC
   workflow_dispatch: # allows a manual run from the Actions tab
-
+ 
 jobs:
   build:
     runs-on: ubuntu-latest
     name: generate-github-profile-summary-cards
     permissions:
-      contents: write # lets the built-in token commit the generated SVGs
+      contents: write # lets the workflow commit the generated SVGs
     steps:
       - uses: actions/checkout@v4
       - uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Personal Access Token (classic) with `repo` and `user` scopes,
+          # saved as a repo secret named PROFILE_TOKEN.
+          # This lets the cards see your private repos and contributions.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
           BRANCH_NAME: "main"
           TIME_ZONE: "Africa/Cairo"
+ 
