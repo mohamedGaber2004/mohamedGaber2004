@@ -170,7 +170,7 @@ A conversational assistant that answers medical questions using context retrieve
 ## GitHub Stats
 
 <p align="center">
-  <img src="profile-summary-card-output/tokyonight/3-stats.svg" width="49%" alt="GitHub stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=mohamedGaber2004&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" width="49%" alt="GitHub stats (all-time commits and PRs)" />
   <img src="profile-summary-card-output/tokyonight/2-most-commit-language.svg" width="49%" alt="Most used languages" />
 </p>
 
